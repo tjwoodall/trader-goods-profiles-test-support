@@ -162,7 +162,7 @@ components:
       description: ID of the record for the TGP Product in the TGP Core database (UUID)
 
   securitySchemes:
-    userRestricted:
+    User-Restricted:
       type: oauth2
       description: >-
         HMRC supports OAuth 2.0 for authenticating user restricted API requests
@@ -203,5 +203,5 @@ paths:
         '404':
           description: No record with the supplied record Id was found for this EORI number
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles-test-support
